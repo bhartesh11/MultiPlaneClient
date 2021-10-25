@@ -1,0 +1,123 @@
+.container .form-1 {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 337px;
+}
+
+.form-1 h2 {
+  text-align: center;
+  margin-top: 0.7rem;
+  margin-bottom: 1.5rem;
+  font-size: 32px;
+}
+
+input {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid;
+  background: none;
+  margin: 0.3rem 0;
+  font-size: 1rem;
+  width: 100%;
+  font-size: 22px;
+}
+.sqa {
+  justify-content: right;
+  border-top: 1px solid #dff2f9;
+  margin-top: 30px;
+  position: relative;
+}
+span.show_pass {
+  position: absolute;
+  right: 5px;
+  padding: 3px 2px 3px 2px;
+  border-radius: 10px;
+  background-color: #e0f5f7;
+  box-sizing: border-box;
+  font-family: "Open Sans SemiBold", "Open Sans Regular", "Open Sans",
+    sans-serif;
+  font-weight: 600;
+  color: #006731;
+  text-align: center;
+  cursor: pointer;
+}
+.sqa span {
+  color: #1d4cc4;
+  font-weight: 600;
+  font-size: 18px;
+  position: absolute;
+  right: 10px;
+  top: 3px;
+}
+label {
+  font-size: 15px;
+}
+button {
+  margin: 4rem 0;
+  margin-bottom: 1.5rem;
+  height: 48px;
+  cursor: pointer;
+  border: none;
+  font-size: 20px;
+  font-weight: 700;
+  color: #fff;
+  background: #009a49;
+  border-radius: 4px;
+}
+.mt-10 {
+  margin-top: 100px;
+}
+.lg-width {
+  width: 190px;
+}
+.copy-right {
+  font-size: 13px;
+}
+header {
+  border-bottom: 2px solid #d7dada;
+}
+@media (max-width: 501px) {
+  html {
+    font-size: 15px;
+  }
+
+  .container .form-1 {
+    width: 300px;
+  }
+}
+
+@media (min-width: 501px) and (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+
+  .container .form-1 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 765px) and (max-width: 1200px) {
+  html {
+    font-size: 18px;
+  }
+
+  .container .form-1 {
+    width: 540px;
+    height: 550px;
+  }
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  .container {
+    height: 100vmax;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .form-1 {
+    top: 50% !important;
+  }
+}

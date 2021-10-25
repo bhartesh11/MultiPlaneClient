@@ -1,0 +1,47 @@
+<header>
+  <img class="img-responsive lg-width" src="assets/images/logo.png" alt="" />
+</header>
+<div class="container">
+  <form (ngSubmit)="onSubmit()" class="form-1">
+    <h2><font>Welcome to eClient</font></h2>
+    <div class="sqa d-flex justify-content-right">
+      <svg
+        version="1.1"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        width="70px"
+        height="28px"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g transform="matrix(1 0 0 1 -1069 -371 )">
+          <path
+            d="M 16.413457107116983 28  L 0.8930041152261765 0  L 70 0  L 70 28  L 16.413457107116983 28  Z "
+            fill-rule="nonzero"
+            fill="#e4f6fb"
+            stroke="none"
+            fill-opacity="0.996078431372549"
+            transform="matrix(1 0 0 1 1069 371 )"
+          />
+        </g>
+      </svg>
+      <span>SQA</span>
+    </div>
+    <label for="text">Username</label>
+    <input type="text" name="username" [(ngModel)]="username" required />
+    <div class="label-show mt-4">
+      <label for="password">Password</label>
+      <input
+        [type]="passType"
+        name="password"
+        [(ngModel)]="password"
+        required
+      />
+      <span class="show_pass" (click)="showPass()">Show</span>
+    </div>
+    <button>Sign In</button>
+    <p class="text-center mt-10 copy-right">
+      ©2021 MultiPlan Inc. All Rights Reserved
+    </p>
+  </form>
+</div>
+
+<!-- oninvalid="this.setCustomValidity('Please enter valid username')" -->

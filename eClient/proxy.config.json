@@ -1,0 +1,5 @@
+"/eclient-authorization/*" : {
+    "target": "http://10.30.204.197:4001",
+    "secure": false,
+    "logLevel": "info"
+}
