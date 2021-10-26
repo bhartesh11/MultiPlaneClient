@@ -9,3 +9,6 @@ body {
   font-family: "Open Sans SemiBold", "Open Sans Regular", "Open Sans",
     sans-serif !important;
 }
+.lg-width {
+  width: 190px;
+}

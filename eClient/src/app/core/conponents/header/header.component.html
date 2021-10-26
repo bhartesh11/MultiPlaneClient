@@ -1,37 +1,31 @@
-<nav class="navbar navbar-expand navbar-light bg-white topbar fixed-top shadow">
-    <h2
-      class="
-        d-none d-sm-inline-block
-        form-inline
-        ml-md-3
-        text-primary text-uppercase
-      "
-    >
-    </h2>
-    
-
-    <button
-      class="profile-btn w-auto bg-transparent border-0"
-      
-      aria-label="Example icon-button with a menu"
-    >
-      <img
-        class="rounded-circle"
-        undraw_posting_photo.svg
-        src="/assets/images/undraw_profile.svg"
-        alt="..."
-      />
-      <!--{{ username }} -->
-    </button>
-    
-      <button >
-       
-        <span>Profile</span>
-      </button>
-      <button (click)="onLogOut()">
-        
-        <span>Logout</span>
-      </button>
-   
-  </nav>
-  
+<div class="row">
+  <div class="col-md-3 col-sm-3 col-lg-3">
+    <img class="img-responsive lg-width" src="assets/images/logo.png" alt="" />
+  </div>
+  <div class="col-md-9 col-sm-9 col-lg-9">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Profile
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" (click)="onLogOut()">Logout</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+</div>

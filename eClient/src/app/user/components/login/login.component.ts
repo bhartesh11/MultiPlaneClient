@@ -23,7 +23,7 @@ export class LoginComponent implements OnInit {
     }
   }
   onSubmit() {
-    this.authservice.login(this.username, this.password).subscribe(
+    this.authservice.login().subscribe(
       (res) => {
         let user = res;
         user.forEach((element: any) => {
@@ -31,7 +31,11 @@ export class LoginComponent implements OnInit {
             this.username == element.username &&
             this.password == element.password
           ) {
+            console.log('login successs');
+
             this.router.navigate(['/client/search']);
+          } else {
+            console.log('Invaid usernae and password');
           }
         });
 
