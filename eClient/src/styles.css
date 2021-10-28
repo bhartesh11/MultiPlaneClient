@@ -1,4 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("/assets/ubuntu-font/font/Ubuntu-Bold.ttf");
+  src: url("/assets/ubuntu-font/font/Ubuntu-BoldItalic.ttf");
+  src: url("/assets/ubuntu-font/font/Ubuntu-Italic.ttf");
+  src: url("/assets/ubuntu-font/font/Ubuntu-Light.ttf");
+  src: url("/assets/ubuntu-font/font/Ubuntu-LightItalic.ttf");
+  src: url("/assets/ubuntu-font/font/Ubuntu-Medium.ttf");
+  src: url("/assets/ubuntu-font/fontUbuntu-MediumItalic.ttf");
+  src: url("/assets/ubuntu-font/font/Ubuntu-Regular.ttf");
+}
 
 html,
 body {
@@ -6,9 +21,266 @@ body {
 }
 body {
   margin: 0;
-  font-family: "Open Sans SemiBold", "Open Sans Regular", "Open Sans",
-    sans-serif !important;
+  font-family: "Ubuntu";
+}
+.md-8 {
+  width: 80%;
+}
+.md-9 {
+  width: 70%;
+}
+.md-1 {
+  width: 10%;
+}
+.md-2 {
+  width: 20%;
+}
+.md-6 {
+  width: 50%;
+}
+.md-3 {
+  width: 30%;
+}
+.md-4 {
+  width: 40%;
+}
+.green {
+  color: #009a49;
+}
+.fw-700 {
+  font-weight: 700 !important;
+}
+.black {
+  color: #000;
+}
+.blue {
+  color: #00468c;
+}
+.bg-blue {
+  background: #00468c;
+}
+.bg-grey {
+  background: #f1f6f9;
 }
 .lg-width {
   width: 190px;
+}
+.space-between {
+  justify-content: space-between;
+}
+.p-text small {
+  font-size: 10px;
+}
+.p-text h4 {
+  font-size: 14px;
+}
+.environment h3 {
+  font-size: 26px;
+}
+.w-33 {
+  width: 33.33%;
+}
+.text-center {
+  text-align: center;
+}
+.p-0 {
+  padding-left: 0;
+}
+.pl-2 {
+  padding-left: 2rem;
+}
+.pr-2 {
+  padding-right: 2rem;
+}
+.pl-0 {
+  padding-left: 0 !important;
+}
+.pl-1 {
+  padding-left: 1rem;
+}
+a:hover {
+  color: #009a49;
+}
+.pr-1 {
+  padding-right: 1rem;
+}
+.float-right {
+  float: right;
+}
+.font-size-18 {
+  font-size: 18px !important;
+}
+.f-size-20 {
+  font-size: 20px !important;
+}
+.md-half-1 {
+  width: 15%;
+}
+.ml-2 {
+  margin-left: 2rem;
+}
+label {
+  font-size: 15px;
+}
+.mr-1 {
+  margin-right: 1rem;
+}
+.mr-2 {
+  margin-right: 2rem;
+}
+.mt-2 {
+  margin-top: 2rem !important;
+}
+.mt-3 {
+  margin-top: 3rem !important;
+}
+.ml-1 {
+  margin-left: 1rem !important;
+}
+.mb-0 {
+  margin-bottom: 0 !important;
+}
+.mr {
+  margin-right: 1rem;
+}
+.fw-600 {
+  font-weight: 600;
+}
+.border-none {
+  border: none !important;
+}
+.mt-1 {
+  margin-top: 1rem !important;
+}
+.p-05 {
+  padding: 0.5rem;
+}
+.pt-2px {
+  padding-top: 2px;
+}
+.pb-2px {
+  padding-bottom: 2px;
+}
+.p-icon {
+  margin-top: 7px;
+  margin-right: 10px;
+  transition: 0.6s;
+}
+.p-icon:hover path {
+  stroke: #009a49;
+}
+.cursor-pointer {
+  cursor: pointer;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.menu,
+.submenu {
+  list-style-type: none;
+}
+
+.item {
+  padding: 10px 0;
+  margin-right: 35px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.menu a {
+  color: #333333;
+  font-size: 22px;
+}
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.item {
+  order: 1;
+  position: relative;
+  display: block;
+  width: auto;
+}
+.button {
+  order: 2;
+}
+
+.toggle {
+  display: none;
+}
+
+nav {
+  border: 2px solid #eee;
+}
+.item.active {
+  border-bottom: 2px solid #009a49;
+  margin-bottom: -2px;
+}
+li.active a {
+  color: #009a49;
+}
+.breadcrumb ul {
+  display: flex;
+  margin: 2px 0;
+}
+.breadcrumb a {
+  font-size: 14px;
+  color: #000;
+}
+.breadcrumb li::before {
+  content: ">";
+  margin: 0 8px;
+}
+.d-flex {
+  display: flex;
+}
+.breadcrumb li:first-child::before {
+  content: "";
+  margin: 0;
+}
+.breadcrumb .active {
+  color: #00468c;
+}
+.mb-05 {
+  margin-bottom: 0.5rem !important;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-primary {
+  background-color: #00468c;
+}
+.btn {
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 700;
+  color: #ffffff;
+}
+.border-radius-0 {
+  border-radius: 0;
+}
+.f-size-14 {
+  font-size: 14px;
+}
+.p-1 {
+  padding: 1rem;
 }

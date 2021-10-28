@@ -1,0 +1,11 @@
+@font-face {
+  font-family: "Ubuntu";
+  src: url("assets/ubuntu-font/font/Ubuntu-Bold");
+  src: url("assets/ubuntu-font/font/Ubuntu-BoldItalic");
+  src: url("assets/ubuntu-font/font/Ubuntu-Italic");
+  src: url("assets/ubuntu-font/font/Ubuntu-Light");
+  src: url("assets/ubuntu-font/font/Ubuntu-LightItalic");
+  src: url("assets/ubuntu-font/font/Ubuntu-Medium");
+  src: url("assets/ubuntu-font/fontUbuntu-MediumItalic");
+  src: url("assets/ubuntu-font/font/Ubuntu-Regular");
+}
